@@ -4133,6 +4133,7 @@ async function run() {
 
     // Setup headers for API call, see Octokit Documentation: https://octokit.github.io/rest.js/#octokit-routes-repos-upload-release-asset for more information
     const headers = { 'content-type': assetContentType, 'content-length': contentLength(assetPath) };
+    console.log(headers);
 
     // Upload a release asset
     // API Documentation: https://developer.github.com/v3/repos/releases/#upload-a-release-asset
